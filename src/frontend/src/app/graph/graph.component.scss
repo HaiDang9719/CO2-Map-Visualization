@@ -1,0 +1,10 @@
+::ng-deep .line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+::ng-deep .zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}

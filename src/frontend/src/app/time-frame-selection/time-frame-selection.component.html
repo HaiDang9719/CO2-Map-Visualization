@@ -1,0 +1,18 @@
+<mat-card class="example-result-card" style="background-color: white;">
+    <mat-card-content>
+        <h4 style="color: black">Time selection: {{value}}</h4>
+        <mat-slider
+                class="example-margin"
+                [disabled]="disabled"
+                [invert]="invert"
+                [max]="max"
+                [min]="min"
+                [step]="step"
+                [thumbLabel]="thumbLabel"
+                [tickInterval]="getSliderTickInterval()"
+                [(ngModel)]="value"
+                (change)="onInputChange($event)"
+                [vertical]="vertical">
+        </mat-slider>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,25 @@
+version: "3"
+services:
+  backend:
+    build: src/backend
+    depends_on:
+      - database
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src/backend:/var/opt/geographic-information-system/backend
+  database:
+    build: src/database
+    ports:
+      - "25432:5432"
+    volumes:
+      - ./src/database/init/:/docker-entrypoint-initdb.d/
+  frontend:
+    build: src/frontend
+    depends_on:
+      - backend
+      - database
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./src/frontend:/var/opt/geographic-information-system/frontend

@@ -1,0 +1,26 @@
+.mat-card {
+  width: 250px;
+}
+
+#country-selection {
+  margin-top: 10px;
+
+  .mat-card-content {
+    margin-bottom: 0;
+  }
+}
+
+#map-options {
+  left: 10px;
+  position: absolute;
+  top: 85px;
+  z-index: 2;
+}
+.example-radio-button {
+  margin: 5px;
+}
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}

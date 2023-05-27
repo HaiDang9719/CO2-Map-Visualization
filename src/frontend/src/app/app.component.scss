@@ -1,0 +1,82 @@
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+app-map {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+//app-graph-co2 {
+//  position: absolute;
+//  z-index: 2;
+//  bottom: 10px;
+//  right: 76%;
+//  left: 1%;
+//}
+app-graph-co2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  right: 70%;
+  left: 1%;
+}
+app-graph {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  right: 70%;
+  left: 1%;
+}
+app-graph-co2-temp {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  right: 70%;
+  left: 1%;
+}
+app-graph-gdp-temp {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  right: 70%;
+  left: 1%;
+}
+//app-graph {
+//  position: absolute;
+//  z-index: 2;
+//  bottom: 10px;
+//  right: 51%;
+//  left: 26%;
+//}
+//app-graph-co2-temp {
+//  position: absolute;
+//  z-index: 2;
+//  bottom: 10px;
+//  right: 26%;
+//  left: 51%;
+//}
+//app-graph {
+//  position: absolute;
+//  z-index: 2;
+//  bottom: 10px;
+//  right: 26%;
+//  left: 51%;
+//}
+//app-graph-co2-temp {
+//  position: absolute;
+//  z-index: 2;
+//  bottom: 10px;
+//  right: 1%;
+//  left: 76%;
+//}
+
+app-time-frame-selection {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  left: 55%;
+}

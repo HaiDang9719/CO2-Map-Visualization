@@ -1,0 +1,19 @@
+FROM kartoza/postgis:12.4
+
+ENV POSTGRES_DBNAME geographic-information-system
+ENV POSTGRES_USER developer
+ENV POSTGRES_PASS &yJv_4Sqw#vX2UbKB4Vw5NRJawRw!VV4
+
+COPY ICOADS.csv /ICOADS.csv
+
+COPY GATACD.csv /GATACD.csv
+
+COPY GDP-RCP85-SSP5.csv /GDP-RCP85-SSP5.csv
+
+COPY GHCN-D_stations.csv /GHCN-D_stations.csv
+
+COPY GHCN-D.csv /GHCN-D.csv
+
+COPY LAND_HEATMAP.csv /LAND_HEATMAP.csv
+
+EXPOSE 5432

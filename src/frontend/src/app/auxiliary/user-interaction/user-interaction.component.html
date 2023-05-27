@@ -1,0 +1,32 @@
+<form class="example-form">
+    <table class="example-full-width" cellspacing="0"><tr>
+        <td><mat-form-field class="example-full-width">
+            <mat-label>Target Year</mat-label>
+            <input matInput #YearValue [value]="2040">
+<!--            <input matInput placeholder="2040">-->
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+            <mat-label>Limit temperature</mat-label>
+            <input matInput #TempValue [value]="15.2">
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+            <mat-label>Area</mat-label>
+            <input matInput #AreaValue [value]=''>
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+            <mat-label>Area-Code</mat-label>
+            <input matInput #AreaCodeValue [value]="">
+        </mat-form-field></td>
+        <button mat-button (click)="getData(YearValue.value, TempValue.value, AreaValue.value, AreaCodeValue.value)">Send</button>
+    </tr></table>
+</form>
+<mat-card>
+    <mat-card-content>
+        <h3 class="example-h2">Relation of Temperature and Global Atmospheric Carbon Dioxide
+            over Time</h3>
+        <div>
+            <svg id="graphCO2TempPred"></svg>
+        </div>
+    </mat-card-content>
+
+</mat-card>

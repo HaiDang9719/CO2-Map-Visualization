@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-content>
+        <mat-form-field appearance="fill" style="float: right">
+            <mat-label>Select a graph variable...</mat-label>
+            <mat-select (selectionChange) = "selectedVariable($event)">
+                <mat-option value="temp">Temp Graph</mat-option>
+                <mat-option value="co2-temp">Global CO₂ - Temp Graph</mat-option>
+                <mat-option value="gdp-temp">GDP - Temp Graph</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <h3 class="example-h2">Development of Atmospheric Carbon Dioxide over Time</h3>
+        <div >
+            <svg id="graphCO2"></svg>
+        </div>
+        <h4 style="color: blue; display: inline">R^2 CO₂ = {{r2COvalue}}</h4>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,20 @@
+<div id="app" *ngIf="(mapvisService.temperatureData | async) as temp">
+    <app-auxiliary></app-auxiliary>
+    <app-map [temp]="temp"></app-map>
+    <!--    <app-graph *ngIf="mapvisService.countrySelection.value !== ''" [temp]="temp"></app-graph>-->
+
+<!--        <app-time-frame-selection *ngIf="mapvisService.visualizationSelection.value === 'heatmap'"></app-time-frame-selection>-->
+</div>
+<div *ngIf="(mapvisService.predictionData | async) as pred">
+    <app-graph-co2 *ngIf="mapvisService.countrySelection.value !== ''
+    && mapvisService.variableSelection.value === 'co2'" [pred]="pred"></app-graph-co2>
+    <div style="background-color: antiquewhite;z-index: 1">
+        <app-graph *ngIf="mapvisService.countrySelection.value !== ''
+                    && mapvisService.variableSelection.value === 'temp'" [pred]="pred"></app-graph>
+        <app-graph-co2-temp *ngIf="mapvisService.countrySelection.value !== ''
+            && mapvisService.variableSelection.value === 'co2-temp'" [pred]="pred"></app-graph-co2-temp>
+        <app-graph-gdp-temp *ngIf="mapvisService.countrySelection.value !== ''
+            && mapvisService.variableSelection.value === 'gdp-temp'" [pred]="pred"></app-graph-gdp-temp>
+    </div>
+
+</div>
