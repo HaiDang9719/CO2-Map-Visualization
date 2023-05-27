@@ -1,4 +1,4 @@
-# Geographic Information System (Group 4)
+
 
 ## What is this project about?
 
